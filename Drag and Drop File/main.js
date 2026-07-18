@@ -67,10 +67,6 @@ fileInput.addEventListener("change", function(){
        style="width:300px; margin-top:2rem; border-radius: 1rem ;">`;
     }
 
-fileInput.addEventListener("change", function(){
-    const file = fileInput.f
-})
-
 dropArea.addEventListener("dragover", (e) =>{
     e.preventDefault();
 
