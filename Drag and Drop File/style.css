@@ -1,0 +1,48 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.progress-container{
+    width: 350px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10rem;
+    overflow: hidden;
+    margin-top: 2rem;
+    #progress-bar{
+        width: 0%;
+        height: 100%;
+        background: green;
+    }
+}
+.drop-area{
+    width: 350px;
+    height: 200px;
+    border: 3px dashed #4CAf50;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+}
+.drop-area p{
+    font-size: 1.4rem;
+    color: #555;
+}
+button{
+    padding: 10px 20px;
+    background: #4CAf50;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
+button:hover{
+    background: #45a049;
+}
