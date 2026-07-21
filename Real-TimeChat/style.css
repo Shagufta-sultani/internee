@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #23a5d549;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{ font-size: 62%; }
+h1{
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+    color: #fff;
+}
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border-radius: 3px;
+    background: #23a5d549;
+}
+.main {
+    border-radius: 3px;
+    height: 200px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 0.9rem;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    .sent, .received {
+        max-width: 50%;
+        font-size: 1.5rem;
+        padding: 0.3rem 0.8rem 0rem 0.3rem;
+        margin: 0.8rem 0;
+        border-radius: 15px;
+        border: 1px solid #141313be;
+        position: relative;
+        animation: ani 0.3s ease-in;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: pre-wrap;
+    }
+    .sent {
+        color: #f7f7f7;
+        text-align: right;
+        margin-left: auto;
+        background: #23a5d549;
+    }
+    .received {
+        text-align: left;
+        margin-right: auto;
+        background: #fff;
+    }
+    .time {
+        font-size: 1.2rem;
+        color: gray;
+        display: block;
+        margin-top: 0.1rem;
+    }
+}
+@keyframes ani {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.input-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    .input, .btn {
+        font-size: 1.5rem;
+        color: #141313be;
+        padding: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+    .btn {
+        color: #f7f7f7;
+        margin: 0.7rem 0;
+        cursor: pointer;
+        background: #25D366;
+        transform: translateX(-3px);
+    }
+    .btn:hover{
+        background: transparent;
+        border: 1px solid  #25D366;
+    }
+}
+@media(width <= 768px) {
+    .container{
+        width: 400px;
+        padding: 1rem 2rem;
+        .main{
+            width: 365px;
+          .sent, .received {  font-size: 1.3rem;}
+    }   }
+}
+@media(width <= 450px) {
+    .container{
+        width: 350px;
+        .main{
+            width: 310px;
+    }   }
+}
