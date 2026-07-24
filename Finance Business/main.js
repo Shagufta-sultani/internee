@@ -1,11 +1,41 @@
 const Hamburger = document.querySelector(".hamburger");
 const MobileM = document.querySelector(".mobile-menu");
 
+const navLink = document.querySelector('.navbar-link');
+
+
+window.addEventListener('scroll', function(){
+    
+    if( window.pageYOffset > 100 ){
+        navLink.style.backgroundColor = "#302c2cf5";
+        navLink.style.boxShadow = ' 0 10px 20px rgba(0, 0, 0, 0.5)';
+    } else{
+    navLink.style.backgroundColor = '';
+    navLink.style.boxShadow = '';
+
+    }
+});
+
 Hamburger.addEventListener('click', () =>{
     Hamburger.classList.toggle('active');
     MobileM.classList.toggle('active');
 });
  
+const Transition = document.querySelectorAll(".Transition");
+const Observer = new IntersectionObserver((enitries) => {
+
+    enitries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+},{ threshold: 0.2 });
+
+Transition.forEach(trans =>{
+
+    Observer.observe(trans);
+});
 
 let images = [
     {
