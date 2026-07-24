@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Finance Business</title>
     <meta charset="UTF-8">
@@ -10,20 +9,20 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
-<body>  
-        <header class="section-navbar">
+<body>
+    <header class="section-navbar">
         <script src="./navbar.js"></script>
     </header>
     <!-- main section -->
-    <main class="main">
+    <main class="main flex">
         <div class="slide"></div>
         <div class="slide"></div>
         <div class="slide"></div>
-        <div class="main-con"></div>
+        <div class="main-con Transition"></div>
     </main>
+    <!-- service -->
     <section class="bott">
-        <div class="first-sec container">
+        <div class="first-sec flex container">
             <div class="first">
                 <h2>Request a call bac right now?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic?</p>
@@ -34,44 +33,91 @@
         </div>
     </section>
     <section class="container section-serv">
-        <div class="service-main">
+        <div class="service-main flex">
             <h2>financial <span class="span">services</span></h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda.</p>
         </div>
-        <div class="service-sec container"></div>
+        <div class="service-sec transition container"></div>
     </section>
-
     <section class="service-bottom">
         <div class="bottom-section container">
-            <div class="left-sec"></div>
-            <div class="right-sec">
-                <div class="grid grid-two--cols">
-                    <div class="hours-content">
-                        <h2 class="span" >945</h2>
+            <div class="left-sec Transition"></div>
+            <div class="right-sec transition-delay: 0.2s">
+                <div class="grid grid-two--cols transition">
+                    <div class="hours-content flex transition-delay: 0.2s">
+                        <h2 class="span">945</h2>
                         <h3>work hours</h3>
                     </div>
-                    <div class="hours-content">
-                        <h2 class="span" >1280</h2>
+                    <div class="hours-content flex transition-delay: 0.4s">
+                        <h2 class="span">1280</h2>
                         <h3>great reviews</h3>
                     </div>
                 </div>
-                <div class="grid grid-two--cols">
-                    <div class="projects-content">
-                        <h2 class="span" >578</h2>
+                <div class="grid grid-two--cols Transition">
+                    <div class="projects-content flex transition-delay: 0.6s">
+                        <h2 class="span">578</h2>
                         <h3>projects done</h3>
                     </div>
-                    <div class="projects-content">
-                        <h2 class="span" >26</h2>
+                    <div class="projects-content flex transition-delay: 0.8s">
+                        <h2 class="span">26</h2>
                         <h3>awards won</h3>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- About Section -->
+    <section class=" aboutSec container">
+        <div class="about flex transition ">
+            <div class="left-about transition-delay: 0.2s">
+                <img src="./img/young-business-lady-female-director-sitting-office-desk-working-process-business-meeting-working-with-colleague-solving-business-tasks-office-collective-concept (1).jpg"
+                    alt="">
+            </div>
+            <div class="right-about transition-delay: 0.4s"></div>
+        </div>
+    </section>
+    <section class="about-butt">
+        <div class="container About--Sec">
+            <div class=" flex ">
+            <div class="">
+                <h2>What they say <span class="span">about us</span></h2>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="About--sec">
+            <div class="flex about-content Transition">
+            </div>
+            <div class="flex about-dot transition">
+               <div class="dot"><span>••</span></div>
+               <div class="dot"><span>••</span></div>    
+           </div>
+        </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <div class="service-main flex container">
+            <h2>Request a <span class="span">call back</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda.</p>
+        </div>
+        <div class="flex contact-sec container ">
+            <form action="" class="">
+                <input class="input" type="text" placeholder="Full Name">
+                <input class="input" type="text" placeholder="E-Mail Address">
+                <input class="input" type="text" placeholder="Subject"> <br>
+                <textarea rows="4" cols="20" placeholder="Your Message"></textarea>
+                <button class="btn btn2">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+       <script src="footer.js"></script>
+    </footer>
     <script src="Navbar.js"></script>
     <script src="main.js"></script>
     <script src="service.js"></script>
-    
+    <script src="About.js"></script>
+    <script src="footer.js"></script>
 </body>
 </html>
